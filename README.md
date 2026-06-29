@@ -1,2 +1,2 @@
 # skynet-del.github.io
-Cybersecurity portfolio for Delray Bennett, including projects, certifications, badges, and resume.
+My cybersecurity portfolio featuring my projects, certifications, badges, resume, and hands-on learning.
