@@ -1,0 +1,164 @@
+```css
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f8;
+  color: #1f2933;
+  line-height: 1.6;
+}
+
+.container {
+  width: 92%;
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.hero {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 18px;
+  margin-bottom: 28px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+}
+
+.eyebrow {
+  color: #2563eb;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: #374151;
+  font-weight: 500;
+  margin-bottom: 22px;
+}
+
+.intro {
+  max-width: 850px;
+  margin-bottom: 16px;
+  font-size: 1rem;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.button-row a {
+  text-decoration: none;
+  background: #111827;
+  color: #ffffff;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.button-row a:hover {
+  background: #2563eb;
+}
+
+section {
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 18px;
+  margin-bottom: 28px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+h3 {
+  font-size: 1.4rem;
+  color: #111827;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 8px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.card {
+  border: 1px solid #e5e7eb;
+  padding: 20px;
+  border-radius: 14px;
+  background: #fafafa;
+}
+
+.card h4 {
+  color: #111827;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.card p {
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+.cert-list {
+  padding-left: 20px;
+}
+
+.cert-list li {
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills span {
+  background: #e8f0ff;
+  color: #1e3a8a;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+footer {
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.9rem;
+  padding: 20px 0;
+}
+
+@media (max-width: 750px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero,
+  section {
+    padding: 24px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+```
