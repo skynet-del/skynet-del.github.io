@@ -7,7 +7,20 @@
 <link rel="stylesheet" href="style.css?v=3" />
 </head>
 <body>
-  <div class="tech-rain"></div>
+<div class="tech-rain" aria-hidden="true">
+  <span style="--x: 4vw; --d: 0s; --t: 11s; --s: 1.4rem;">💻</span>
+  <span style="--x: 12vw; --d: 2s; --t: 14s; --s: 1.1rem;">📱</span>
+  <span style="--x: 20vw; --d: 4s; --t: 12s; --s: 1.5rem;">🖥️</span>
+  <span style="--x: 28vw; --d: 1s; --t: 16s; --s: 1.2rem;">💻</span>
+  <span style="--x: 36vw; --d: 5s; --t: 13s; --s: 1.4rem;">📱</span>
+  <span style="--x: 44vw; --d: 3s; --t: 15s; --s: 1.1rem;">🖥️</span>
+  <span style="--x: 52vw; --d: 6s; --t: 12s; --s: 1.5rem;">💻</span>
+  <span style="--x: 60vw; --d: 2s; --t: 17s; --s: 1.2rem;">📱</span>
+  <span style="--x: 68vw; --d: 4s; --t: 14s; --s: 1.4rem;">🖥️</span>
+  <span style="--x: 76vw; --d: 1s; --t: 13s; --s: 1.1rem;">💻</span>
+  <span style="--x: 84vw; --d: 5s; --t: 16s; --s: 1.5rem;">📱</span>
+  <span style="--x: 92vw; --d: 3s; --t: 12s; --s: 1.2rem;">🖥️</span>
+</div>
 
   <main class="container">
 
@@ -122,24 +135,6 @@
     </footer>
 
   </main> 
-  
- <script>
-    const techRain = document.querySelector(".tech-rain");
-    const icons = ["💻", "🖥️", "📱"];
-
-    for (let i = 0; i < 22; i++) {
-      const drop = document.createElement("span");
-      drop.className = "tech-drop";
-      drop.textContent = icons[Math.floor(Math.random() * icons.length)];
-
-      drop.style.left = Math.random() * 100 + "vw";
-      drop.style.animationDuration = 8 + Math.random() * 10 + "s";
-      drop.style.animationDelay = Math.random() * 8 + "s";
-      drop.style.fontSize = 1 + Math.random() * 1.2 + "rem";
-
-      techRain.appendChild(drop);
-    }
-  </script>
-  
+    
 </body>
 </html>
