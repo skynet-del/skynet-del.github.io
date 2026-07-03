@@ -122,6 +122,23 @@
     </footer>
 
   </main>
+  
+  <script>
+    const techRain = document.querySelector(".tech-rain");
+    const icons = ["💻", "🖥️", "📱"];
 
+    for (let i = 0; i < 22; i++) {
+    const drop = document.createElement("span");
+    drop.className = "tech-drop";
+    drop.textContent = icons[Math.floor(Math.random() * icons.length)];
+
+    drop.style.left = Math.random() * 100 + "vw";
+    drop.style.animationDuration = 8 + Math.random() * 10 + "s";
+    drop.style.animationDelay = Math.random() * 8 + "s";
+    drop.style.fontSize = 1 + Math.random() * 1.2 + "rem";
+
+    techRain.appendChild(drop);
+    }
+  </script>
 </body>
 </html>
