@@ -122,12 +122,10 @@
     </footer>
 
   </main> 
-  <script>
-  document.addEventListener("DOMContentLoaded", function () {
+  
+ <script>
     const techRain = document.querySelector(".tech-rain");
     const icons = ["💻", "🖥️", "📱"];
-
-    if (!techRain) return;
 
     for (let i = 0; i < 22; i++) {
       const drop = document.createElement("span");
@@ -141,7 +139,7 @@
 
       techRain.appendChild(drop);
     }
-  });
-</script>
+  </script>
+  
 </body>
 </html>
