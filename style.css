@@ -7,36 +7,39 @@
 body {
   .tech-rain {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   pointer-events: none;
   overflow: hidden;
   z-index: 0;
 }
 
-.tech-drop {
+.tech-rain span {
   position: absolute;
-  top: -60px;
-  font-size: 1.8rem;
-  opacity: 0.22;
-  animation: fall linear infinite;
-  user-select: none;
+  top: -80px;
+  left: var(--x);
+  font-size: var(--s);
+  opacity: 0;
+  animation: techFall var(--t) linear infinite;
+  animation-delay: var(--d);
+  filter: drop-shadow(0 8px 14px rgba(37, 99, 235, 0.25));
 }
 
-@keyframes fall {
+@keyframes techFall {
   0% {
-    transform: translateY(-80px) rotate(0deg);
+    transform: translateY(-100px) rotate(0deg);
     opacity: 0;
   }
 
   10% {
+    opacity: 0.32;
+  }
+
+  85% {
     opacity: 0.22;
   }
 
   100% {
-    transform: translateY(110vh) rotate(12deg);
+    transform: translateY(115vh) rotate(24deg);
     opacity: 0;
   }
 }
@@ -52,7 +55,7 @@ body {
 
 .container {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   width: 92%;
   max-width: 1050px;
   margin: 0 auto;
