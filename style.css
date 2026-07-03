@@ -19,8 +19,8 @@ body {
 .tech-drop {
   position: absolute;
   top: -60px;
-  font-size: 1.6rem;
-  opacity: 0.12;
+  font-size: 1.8rem;
+  opacity: 0.22;
   animation: fall linear infinite;
   user-select: none;
 }
@@ -32,7 +32,7 @@ body {
   }
 
   10% {
-    opacity: 0.14;
+    opacity: 0.22;
   }
 
   100% {
