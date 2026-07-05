@@ -5,7 +5,18 @@
 }
 
 body {
-  .tech-rain {
+  font-family: Arial, Helvetica, sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(37, 99, 235, 0.16), transparent 28%),
+    radial-gradient(circle at top right, rgba(16, 185, 129, 0.12), transparent 24%),
+    linear-gradient(to bottom, #f8fbff, #eef4fb);
+  color: #1f2933;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Tech rain background */
+.tech-rain {
   position: fixed;
   inset: 0;
   pointer-events: none;
@@ -31,26 +42,17 @@ body {
   }
 
   10% {
-    opacity: 0.32;
+    opacity: 0.45;
   }
 
   85% {
-    opacity: 0.22;
+    opacity: 0.32;
   }
 
   100% {
     transform: translateY(115vh) rotate(24deg);
     opacity: 0;
   }
-}
-  
-  font-family: Arial, Helvetica, sans-serif;
-  background:
-    radial-gradient(circle at top left, rgba(37, 99, 235, 0.16), transparent 28%),
-    radial-gradient(circle at top right, rgba(16, 185, 129, 0.12), transparent 24%),
-    linear-gradient(to bottom, #f8fbff, #eef4fb);
-  color: #1f2933;
-  line-height: 1.6;
 }
 
 .container {
