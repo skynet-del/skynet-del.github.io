@@ -26,34 +26,35 @@ body {
 
 .tech-rain span {
   position: absolute;
-  top: -80px;
+  top: -100px;
   left: var(--x);
   font-size: var(--s);
   opacity: 0;
   animation: techFall var(--t) linear infinite;
   animation-delay: var(--d);
-  filter: drop-shadow(0 8px 14px rgba(37, 99, 235, 0.25));
+  filter: drop-shadow(0 10px 18px rgba(37, 99, 235, 0.28));
 }
 
 @keyframes techFall {
   0% {
-    transform: translateY(-100px) rotate(0deg);
+    transform: translateY(-120px) rotate(0deg);
     opacity: 0;
   }
 
-  10% {
-    opacity: 0.45;
+  8% {
+    opacity: 0.72;
   }
 
-  85% {
-    opacity: 0.32;
+  75% {
+    opacity: 0.58;
   }
 
   100% {
-    transform: translateY(115vh) rotate(24deg);
+    transform: translateY(120vh) rotate(28deg);
     opacity: 0;
   }
 }
+
 .container {
   position: relative;
   z-index: 2;
